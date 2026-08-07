@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tushar Sharma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --main: #1D3557;
+    --text: #14171A;
+    --bg: #FAFAF9;
+    --accent: #2A9D8F;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 24px;
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 6vw, 48px);
+    color: var(--main);
+    margin: 0 0 12px;
+  }
+  p {
+    font-size: clamp(15px, 3vw, 18px);
+    color: var(--text);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  .accent {
+    display: inline-block;
+    width: 48px;
+    height: 3px;
+    background: var(--accent);
+    margin: 18px 0;
+  }
+  .soon {
+    margin-top: 28px;
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <h1>Tushar Sharma</h1>
+    <div class="accent"></div>
+    <p>I turn messy civic problems into multi-agent systems that actually run &mdash; not demos.</p>
+    <div class="soon">Portfolio &mdash; building now</div>
+  </div>
+</body>
+</html>

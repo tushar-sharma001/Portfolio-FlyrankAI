@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tushar Sharma</title>
+<title>Tushar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -16,52 +16,66 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: var(--bg);
     color: var(--text);
     font-family: 'Inter', sans-serif;
-    text-align: center;
-    padding: 24px;
+    line-height: 1.5;
   }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 64px 24px; }
   h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    font-size: clamp(28px, 6vw, 48px);
+    font-size: clamp(28px, 6vw, 42px);
     color: var(--main);
-    margin: 0 0 12px;
+    margin: 0 0 8px;
   }
-  p {
-    font-size: clamp(15px, 3vw, 18px);
-    color: var(--text);
-    max-width: 480px;
-    margin: 0 auto;
-    line-height: 1.5;
+  .claim { font-size: clamp(15px, 3vw, 18px); max-width: 480px; margin: 0 0 20px; }
+  .accent { display: inline-block; width: 48px; height: 3px; background: var(--accent); margin-bottom: 24px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+  .links a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--main);
+    border: 1.5px solid var(--main);
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: background 0.15s, color 0.15s;
   }
-  .accent {
-    display: inline-block;
-    width: 48px;
-    height: 3px;
-    background: var(--accent);
-    margin: 18px 0;
+  .links a:hover { background: var(--main); color: var(--bg); }
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    color: var(--main);
+    margin: 36px 0 10px;
   }
-  .soon {
-    margin-top: 28px;
-    font-size: 13px;
-    color: #888;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
+  p { font-size: 15px; margin: 0 0 12px; }
+  .placeholder { color: #999; font-style: italic; font-size: 14px; }
+  footer { margin-top: 56px; font-size: 13px; color: #888; border-top: 1px solid #e5e5e2; padding-top: 20px; }
 </style>
 </head>
 <body>
-  <div>
-    <h1>Tushar Sharma</h1>
+  <div class="wrap">
+    <h1>Tushar</h1>
     <div class="accent"></div>
-    <p>I turn messy civic problems into multi-agent systems that actually run &mdash; not demos.</p>
-    <div class="soon">Portfolio &mdash; building now</div>
+    <p class="claim">I turn messy civic problems into multi-agent systems that actually run &mdash; not demos.</p>
+
+    <div class="links">
+      <a href="#" title="www.linkedin.com/in/tushar-sharma-812689316">LinkedIn</a>
+      <a href="https://github.com/tushar-sharma001">GitHub</a>
+      <a href="#" title="https://drive.google.com/file/d/1mrFOBWrKRwEVtt2hPapGUX6dt7fPDxKj/view?usp=sharing">CV</a>
+      <a href="#" title="https://calendly.com/sharma-tushar2313/new-meeting">Book a call</a>
+    </div>
+
+    <h2>What I'm building</h2>
+    <p>BCA student working on multi-agent AI systems for civic and social problems &mdash; currently an ML Engineering Intern at FlyRank AI, building a content-scoring lane on a real search &amp; engagement data warehouse. Case studies and full write-ups landing here as the portfolio build continues.</p>
+
+    <h2>Posts &amp; capstone</h2>
+    <p class="placeholder">Capstone work and future updates will be posted here.</p>
+
+    <footer>
+      FlyRank AI Internship &mdash; completion badge will be added here once the capstone is approved.
+    </footer>
   </div>
 </body>
 </html>
